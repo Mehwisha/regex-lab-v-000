@@ -21,5 +21,8 @@ end
 
 
 def valid_phone_number?(phone)
-  !phone.scan(/^(\d{3})(\d{3})(\d{4})$/)
+  if phone.scan(/^(\d{3})(\d{3})(\d{4})$/)
+    return true
+  elsif !phone.scan(/^(\d{3})(\d{3})(\d{4})$/)
+    return false
 end
