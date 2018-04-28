@@ -24,5 +24,6 @@ def valid_phone_number?(phone)
 if  phone.scan(/^(\d{3})(\d{3})(\d{4})$/) || phone
   return true
 elsif valid_phone_number?(phone)
+  return false
 end
 end
