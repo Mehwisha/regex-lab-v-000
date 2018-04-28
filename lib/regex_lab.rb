@@ -21,9 +21,6 @@ end
 
 
 def valid_phone_number?(phone)
-  if phone.scan(/^(\d{3})(\d{3})(\d{4})$/) != nil
-      return true
-    else phone == nil
-      return false
-  end
+  !phone.scan(/^(\d{3})(\d{3})(\d{4})$/)
+
 end
