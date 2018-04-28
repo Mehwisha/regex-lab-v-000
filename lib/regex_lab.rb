@@ -1,3 +1,4 @@
+require "pry"
 def starts_with_a_vowel?(word)
 if word.match(/\b[aeiou]\w*/i)
   return true
@@ -21,6 +22,7 @@ end
 
 
 def valid_phone_number?(phone)
+binding.pry 
   if phone.scan(/^(\d{3})(\d{3})(\d{4})$/) != nil ?
     true : false
 end
