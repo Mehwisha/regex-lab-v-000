@@ -23,7 +23,7 @@ end
 def valid_phone_number?(phone)
 if  phone.scan(/^(\d{3})(\d{3})(\d{4})$/) && phone.scan(/^(\d{3})(\d{3})(\d{4})$/) != " "
   return true
-elsif phone == "" || phone == nil
+elsif phone == " "
   return false
 end
 end
