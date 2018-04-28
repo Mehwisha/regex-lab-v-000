@@ -22,5 +22,5 @@ end
 
 def valid_phone_number?(phone)
    phone.scan(/^(\d{3})(\d{3})(\d{4})$/) && phone.scan(/^(\d{3})(\d{3})(\d{4})$/) != nil
-end
+
 end
