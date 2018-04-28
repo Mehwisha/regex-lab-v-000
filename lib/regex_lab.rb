@@ -22,8 +22,6 @@ end
 
 
 def valid_phone_number?(phone)
-binding.pry
-  if phone.scan(/[0-9]/).length == 10
-    true : false
-end
+
+  phone.scan(/[0-9]/).length == 10 ? true : false
 end
